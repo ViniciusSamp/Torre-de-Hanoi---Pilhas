@@ -27,7 +27,9 @@ void exibeTorres();
 //fim prototipo funcoes
 
 int main(){
-    int numDiscos = 5;
+    int numDiscos;
+    printf("Digite o numero de Discos da torre de Hanoi: ");
+    scanf("%d",&numDiscos);
     int tamanhoLista = pow(2,numDiscos)-1;
 
     Stack *t1 = criaStack(numDiscos+1,'A');
